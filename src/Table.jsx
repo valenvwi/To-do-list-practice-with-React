@@ -96,18 +96,21 @@ export default function DataTable() {
             placeholder="Task"
             value={newTask}
             onChange={(e) => setNewTask(e.target.value)}
+            className="form-control-long"
           />
           <input
             type="text"
             placeholder="Description"
             value={newDescription}
             onChange={(e) => setNewDescription(e.target.value)}
+            className="form-control-long"
           />
           <input
             type="text"
             placeholder="Deadline"
             value={newDeadline}
             onChange={(e) => setNewDeadline(e.target.value)}
+            className="form-control-short"
           />
           <button onClick={handleCreateTask}>Save</button>
           <button onClick={handleCloseForm}>Cancel</button>
